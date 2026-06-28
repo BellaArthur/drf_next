@@ -1,0 +1,11 @@
+venv/
+.env
+__pycache__/
+*.pyc
+db.sqlite3
+media/
+
+
+#IDE / code-server sppecific configuration 
+.vscode/
+.history/
