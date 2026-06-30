@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'corsheaders',
 
     #my apps
+    'core',
     'accounts',
     'blog',
 ]
@@ -117,6 +118,8 @@ REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': (
         'django_filters.rest_framework.DjangoFilterBackend',
     ),
+    'DEFAULT_PAGINATION_CLASS': 'core.utils.StandardPagination',  
+    'PAGE_SIZE': 10,
 }
 
 # JWT configuration
